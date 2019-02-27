@@ -1,0 +1,67 @@
+body {
+    
+}
+p{
+    text-align: justify;
+}
+nav.navbar {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+li{
+    margin: 0 10px;
+}
+.sec1{
+    background-color: #ebefef;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+.sec1 .container {
+    padding-top: 150px;
+}
+.sec2 .container{
+    padding-bottom: 150px;
+}
+.sec1 button{
+    margin: 10% 0;
+}
+.sec1 p{
+    font-size: 18px;
+    padding: 10% 5% 0 0;
+}
+.sec1 .icons i{
+    margin: 0 4px;
+}
+.do-u-have-any-questions{
+    background-color: cadetblue;
+    border-radius: 5px;
+    width:20%;
+    float: right;
+}
+.do-u-have-any-questions p{
+    padding: 8px 0 8px 20px;
+    margin: 0;
+}
+.sec2 .row{
+   margin-top: 135px;
+}
+.sec2 .container > p{
+    font-weight: thin;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.sec2 .col-md-3{
+    border-left: 1px solid rgba(0,0,0,0.1);
+    box-shadow: -10px 1px 43px -20px rgba(0,0,0,0.5) ;
+}
+.sec2 .service{
+    padding: 10px 20px;
+}
+.sec2 .service p{
+    padding: 10px 0;
+}
+.sec2 .service h3{
+    font-size: 32px;
+}
+.sec2 .service h3 span i{
+    padding: 0 4px 0 0;
+}

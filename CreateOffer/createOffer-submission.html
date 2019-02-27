@@ -1,0 +1,523 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="../css/invoice_style.css" />
+    <link rel="stylesheet" href="../css/add-client.css" />
+    <link rel="stylesheet" href="createOffer-submission.css" />
+
+    <title>Creat offer submission</title>
+
+</head>
+
+<body>
+
+
+    <aside class="side-menu float-right fixed-top pt-3">
+        <ul class="nav flex-column">
+            <li class="nav-item ">
+                <a class="nav-link active" href="#"><img src=""></a>
+            </li>
+
+            <li class="nav-item border menu-item">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>لوحة المراقبة</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>الموردين</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>العملاء</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link active" href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>العروض</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>الفواتير</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>الطلبات</a>
+            </li>
+            <li class="nav-item menu-item ">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>الدفعات</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>المخزن</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>المصروفات</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>المصرف</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>نقطة بيع</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>التسويق</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>التقارير</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>المحاسبة</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>الاعلانات</a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <div class="content">
+
+        <nav class="fixed-top border">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-2 side-nav-icon">
+                        <a href="#" class="float-right "><i class="fas fa-bars fa-lg fa-rotate-90"></i></a>
+
+                    </div>
+                    <div class="col-md-3 text-center tools">
+                        <a href="#" class="tools-start"><i class="fas fa-cog fa-lg"></i></a>
+                        <a href="#"> <i class="fas fa-eye fa-lg"></i></a>
+                        <a href="#" class="tools-end"> <i class="fas fa-plus fa-lg"></i></a>
+
+                    </div>
+                    <div class="col-md-7 icons ">
+
+
+                        <a href="#" class="username"><span class=" "><i class="fas fa-user-circle fa-2x "></i></span>User name </a>
+
+                        <a href="#" class="eshtrak"><span>اشتراك</span></a>
+
+                        <a href="#" class="my-company">My Company</a>
+
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> <i class="fas fa-question-circle fa-lg"></i></a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> <i class="fas fa-desktop fa-lg"></i></a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="تسجيل الخروج"><i class="fas fa-power-off fa-lg"></i></a>
+
+                    </div>
+
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="page-title">
+                            <p>Customer Name</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="">
+
+                                <a href="#"><button class="btn btn-outline-info">اضافة منتج<span><i class="icofont-plus-circle px-1"></i></span></button></a>
+
+                                <a href="#"><button class="btn btn-outline-info">منتج من المخزن<span><i class="icofont-box px-1"></i></span></button></a>
+
+                                <a href="edit-client.html"><button class="btn btn-outline-info coloredbtn ">تحويل الفاتورة<span><i class="icofont-paper px-1"></i></span></button></a>
+
+                                <a href="#"><button class="btn btn-outline-info ">حفظ<span><i class="icofont-save px-1"></i></span></button></a>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <section class="info">
+
+            <section class="">
+                <div class="container-fluid mb-5">
+                    <div class="row border-bottom pb-1 mb-2">
+                        <div class="col-md-4 ">
+                            <div class="">
+                                <div class="user-info">
+
+                                    <h4 class="px-2">User Name</h4>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-8 icons">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="row ">
+                                        <i class="icofont-tools tool"></i>
+                                        <i class="icofont-search"></i>
+                                        <i class="icofont-print"></i>
+                                        <i class="icofont-download"></i>
+                                        <i class="icofont-clip"></i>
+                                        <i class="icofont-ui-message"></i>
+
+                                    </div>
+                                    <div class="row pb-3 border-bottom">
+                                        <h6>المسئول</h6><span><i class="icofont-user-alt-3"></i><a href="#">انا</a> </span>
+
+
+                                    </div>
+                                    <div class="row company-name">
+                                        <h6>My Company<span><i class="icofont-company"></i></span></h6>
+
+
+                                    </div>
+                                    <div class="row">
+                                        <p>email@gmail.com<span><i class="icofont-ui-message"></i></span></p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-8 form-border">
+                                    <div class="form-inputs">
+                                        <div class="">
+                                            <form>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label ">العرض#</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control ">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">التاريخ</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">تاريخ الانتهاء</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">الوضع</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                                <hr />
+
+                                                <div class="full-width">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">قائمة الاسعار</label>
+                                                        <div class="col-sm-9">
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">قالب العرض</label>
+                                                        <div class="col-sm-9">
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">العملة</label>
+                                                        <div class="col-sm-9">
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row  mt-4">
+                        <div class="col-md-2 mr-auto">
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="اضافة منتج"><i class="icofont-plus-circle"></i></a>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title=" منتج من المخزن"><i class="icofont-box"></i></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title=" اضافة الي ضريبة العرض "><i class="fa fa-percentage"></i></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="ارفاق ملف"><i class="icofont-clip"></i></a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row bg-light">
+                        <table class="table ">
+                            <thead class="thead-dark text-center">
+                                <tr>
+                                    <th scope="col">منتج الوصف</th>
+                                    <th scope="col">الكمية</th>
+                                    <th scope="col">السعر</th>
+                                    <th scope="col">الضريبة</th>
+                                    <th scope="col">خصم</th>
+                                    <th scope="col">المجموع الجزئي</th>
+                                    <th scope="col">المعدل</th>
+                                    <th scope="col">المجموع</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">
+                                        <form class="">
+
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="">
+
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="">
+
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="">
+
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="">
+
+                                            <div class="form-group">
+
+                                                <input type="number" class="form-control" placeholder="">
+
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="">
+
+                                            <div class="form-group">
+
+                                                <input type="number" class="form-control" placeholder="">
+
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <div class="form-group">
+
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </td>
+
+
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row  mt-4 p-0">
+                        <div class="col-md-4 mr-auto p-0">
+                            <div class="row">
+                                <div class="col-md-12 p-0">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label px-1"><i class="icofont-truck-alt" data-toggle="tooltip" data-placement="bottom" title="رسوم الشحن"></i></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" readonly class="form-control-plaintext form-control-sm border px-1" value="0">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 p-0">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label px-1"><i class="icofont-truck-alt" data-toggle="tooltip" data-placement="bottom" title="تعديل"></i></label>
+                                            <div class="col-sm-10">
+                                                <input type="text" readonly class="form-control-plaintext form-control-sm border">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6 p-0">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label px-1">:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" readonly class="form-control-plaintext form-control-sm border">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <table class="table ">
+                            <thead class="thead-dark text-center">
+                                <tr>
+                                    <th scope="col">المجموع الجزئي</th>
+                                    <th scope="col">مجموع الضرائب</th>
+                                    <th scope="col">اجمالي الخصم</th>
+                                    <th scope="col"> ضريبة العرض </th>
+
+                                    <th scope="col">المجموع</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <h6>ملاحظة للعميل
+
+                                    </h6>
+
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder=""></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <h6>شروط العرض
+
+                                    </h6>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+    </div>
+
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/add-client.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>

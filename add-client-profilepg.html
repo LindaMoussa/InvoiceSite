@@ -1,0 +1,783 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/icofont/icofont.min.css" />
+    <link rel="stylesheet" href="css/invoice_style.css" />
+    <link rel="stylesheet" href="css/add-client.css" />
+
+    <title>Add Client</title>
+
+</head>
+
+<body>
+
+
+    <aside class="side-menu float-right fixed-top pt-3">
+        <ul class="nav flex-column">
+            <li class="nav-item ">
+                <a class="nav-link active" href="#"><img src=""></a>
+            </li>
+
+            <li class="nav-item border menu-item">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>لوحة المراقبة</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>الموردين</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>العملاء</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link active" href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>العروض</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>الفواتير</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>الطلبات</a>
+            </li>
+            <li class="nav-item menu-item ">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>الدفعات</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>المخزن</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>المصروفات</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>المصرف</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>نقطة بيع</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>التسويق</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>التقارير</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>المحاسبة</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>الاعلانات</a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <div class="content">
+
+        <nav class="fixed-top border">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-2 side-nav-icon">
+                        <a href="#" class="float-right "><i class="fas fa-bars fa-lg fa-rotate-90"></i></a>
+
+                    </div>
+                    <div class="col-md-3 text-center tools">
+                        <a href="#" class="tools-start"><i class="fas fa-cog fa-lg"></i></a>
+                        <a href="#"> <i class="fas fa-eye fa-lg"></i></a>
+                        <a href="#" class="tools-end"> <i class="fas fa-plus fa-lg"></i></a>
+
+                    </div>
+                    <div class="col-md-7 icons ">
+
+
+                        <a href="#" class="username"><span class=" "><i class="fas fa-user-circle fa-2x "></i></span>User name </a>
+
+                        <a href="#" class="eshtrak"><span>اشتراك</span></a>
+
+                        <a href="#" class="my-company">My Company</a>
+
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> <i class="fas fa-question-circle fa-lg"></i></a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> <i class="fas fa-desktop fa-lg"></i></a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="تسجيل الخروج"><i class="fas fa-power-off fa-lg"></i></a>
+
+                    </div>
+
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="page-title">
+                            <p>Customer Name</p>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 frwrd-bkwrd-btns">
+
+                                <a href="#"><button class="btn btn-outline-info backward-btn"><span><i class="icofont-ui-previous px-1 backward"></i></span></button></a>
+
+                                <a href="#"><button class="btn btn-outline-info"><span><i class="icofont-ui-previous px-1 forward"></i></span></button></a>
+
+                            </div>
+                            <div class="col-md-6 btns float-left">
+                                <a href="edit-client.html"><button class="btn btn-secondary save">تعديل<span><i class="fas fa-check px-1"></i></span></button></a>
+
+                                <a href="#"><button class="btn btn-outline-danger delete">حذف<span><i class="fas fa-times px-1"></i></span></button></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="info">
+
+
+        </section>
+
+        <section class="container-fluid position-relative ">
+            <ul class="nav nav-pills tabs fixed-bottom" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-details-tab" data-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-details" aria-selected="true">التفاصيل</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-offer-tab" data-toggle="pill" href="#pills-offer" role="tab" aria-controls="pills-offer" aria-selected="false">العروض</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-invoices-tab" data-toggle="pill" href="#pills-invoices" role="tab" aria-controls="pills-invoices" aria-selected="false">الفواتير</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tab4-tab" data-toggle="pill" href="#pills-tab4" role="tab" aria-controls="pills-tab4" aria-selected="false">سندات الطلب</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tab5-tab" data-toggle="pill" href="#pills-tab5" role="tab" aria-controls="pills-tab5" aria-selected="false">الدفعات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tab6-tab" data-toggle="pill" href="#pills-tab6" role="tab" aria-controls="pills-tab6" aria-selected="false">المصروفات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tab7-tab" data-toggle="pill" href="#pills-tab7" role="tab" aria-controls="pills-tab7" aria-selected="false">كشف حساب</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tab8-tab" data-toggle="pill" href="#pills-tab8" role="tab" aria-controls="pills-tab8" aria-selected="false">سجل سداد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-tab9-tab" data-toggle="pill" href="#pills-tab9" role="tab" aria-controls="pills-tab9" aria-selected="false">منتجات تم بيعها</a>
+                </li>
+                
+               
+            </ul>
+            <!-------------------------------------------------------------->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
+                    <section class="details">
+                        <div class="container-fluid mb-5">
+                            <div class="row border-bottom pb-3">
+                                <div class="col-md-6 ">
+                                    <div class="">
+                                        <div class="user-img">
+                                            <span><img src="images/profile-pic.jpg" class="img-fluid"><span class="px-2">User Name</span></span>
+
+                                        </div>
+
+                                        <div class="user-info mt-2">
+                                            <span>بار كود:</span>
+                                            <p></p>
+                                            <span>الحساب:</span>
+                                            <p></p>
+                                            <span>رقم التعريف الضريبي:</span>
+                                            <p></p>
+
+
+                                        </div>
+                                        <div class="reports-btns float-left ml-3">
+                                            <button class="btn btn-info"><i class="icofont-paper"></i></button>
+                                            <button class="btn btn-info"><i class="icofont-paper"></i></button>
+                                            <button class="btn btn-info"><i class="icofont-paper"></i></button>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <div class="row border-bottom">
+
+                                            <div class="col-md-6">
+
+                                                <p>الاجمالي للفواتير</p>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>SAR 0</p>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-md-6">
+                                                <p> مجموع المبالغ المدفوعة</p>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>SAR 0</p>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="row border-bottom">
+                                            <div class="col-md-6">
+                                                <h6>مجموع الرصيد </h6>
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>SAR 0</p>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row border-bottom">
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <h6 class="px-3 py-2 "> معلومات عن المستخدم</h6>
+                                    </div>
+                                    <div class="">
+                                        <span class="px-2"><b>جهة الاتصال:</b></span>
+                                        <span>xyz</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <h6 class="px-3 py-2 "> ملاحظات</h6>
+                                    </div>
+
+                                    <form>
+                                        <div class="form-group">
+
+                                            <textarea type="text" class="form-control" placeholder="" rows="5"></textarea>
+
+                                        </div>
+
+                                    </form>
+
+
+                                </div>
+
+
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <h6 class="px-3 py-2 "> الشبكات الاجتماعية</h6>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <h6 class="px-3 py-2 "> جهات الاتصال</h6>
+                                    </div>
+
+                                    <form>
+                                        <div class="form-group">
+
+                                            <textarea type="text" class="form-control" placeholder="" rows="2"></textarea>
+
+                                        </div>
+
+                                    </form>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-offer" role="tabpanel" aria-labelledby="pills-offer-tab">
+                    <section class="offers">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">الوضع</th>
+                                    <th scope="col">العرض</th>
+                                    <th scope="col">تم انشاؤه في</th>
+                                    <th scope="col">تاريخ الاستحقاق</th>
+                                    <th scope="col">اسم العميل</th>
+                                    <th scope="col">المسئول</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">اجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span><a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a></span></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span><a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a></span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+
+                <div class="tab-pane fade" id="pills-invoices" role="tabpanel" aria-labelledby="pills-invoices-tab">
+                     <section class="invoices">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">الوضع</th>
+                                    <th scope="col">العرض</th>
+                                    <th scope="col">تم انشاؤه في</th>
+                                    <th scope="col">تاريخ الاستحقاق</th>
+                                    <th scope="col">اسم العميل</th>
+                                    <th scope="col">المسئول</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">الرصيد</th>
+                                    <th scope="col">اجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span><a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a></span></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span><a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a></span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+                </div>
+                
+                <div class="tab-pane fade" id="pills-tab4" role="tabpanel" aria-labelledby="pills-tab4-tab">
+                     <section class="tab4">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">الوضع</th>
+                                    <th scope="col">سند الطلب</th>
+                                    <th scope="col">تم انشاؤه في</th>
+                                    <th scope="col">تاريخ الاستحقاق</th>
+                                    <th scope="col">اسم العميل</th>
+                                    <th scope="col">المسئول</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">الرصيد</th>
+                                    <th scope="col">اجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span><a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a></span></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span><a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a> <a href="#"><i class="icofont-paper"></i></a></span></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+                </div>
+                
+                <div class="tab-pane fade" id="pills-tab5" role="tabpanel" aria-labelledby="pills-tab5-tab">
+                     <section class="tab5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">مرجع</th>
+                                    <th scope="col">التاريخ</th>
+                                    <th scope="col">الفاتورة</th>
+                                    <th scope="col">العميل</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">طريقة الدفع</th>
+                                    <th scope="col">وذلك عن</th>
+                                    <th scope="col">ملاحظة</th>
+                                    <th scope="col">اجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+                </div>
+                
+                <div class="tab-pane fade" id="pills-tab6" role="tabpanel" aria-labelledby="pills-tab6-tab">
+                     <section class="tab5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">مرجع</th>
+                                    <th scope="col">التاريخ</th>
+                                    <th scope="col">الفاتورة</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">الضريبة</th>
+                                    <th scope="col">المجموع</th>
+                                    <th scope="col"> التصنيف</th>
+                                    <th scope="col">ملاحظة</th>
+                                    <th scope="col">اجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+                </div>
+                
+                <div class="tab-pane fade" id="pills-tab7" role="tabpanel" aria-labelledby="pills-tab7-tab">
+                     <section class="tab5">
+                                     
+                
+                <div class="row">
+                       
+                   
+                    <div class="col-md-4">
+                        <div class="">
+                            <form>
+                                <div class="form-group row">
+                                    <label id="userName" class="col-sm-5 col-form-label">النطاق الزمني:</label>
+                                    <div class="col-sm-7">
+
+                                        <div class="form-group">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option disabled>الحالي</option>
+                                                <option>اليوم</option>
+                                                <option>هذا السبوع</option>
+                                                <option selected>هذا الشهر</option>
+
+                                                <option>هذا الربع</option>
+                                                <option>هذا العام</option>
+                                                <option disabled>السابق</option>
+                                                <option>امس</option>
+                                                <option>الاسبوع الماضي</option>
+                                                <option>الشهر الماضي</option>
+                                                <option>الربع الماضي</option>
+                                                <option>العام الماضي</option>
+                                                <option disabled>تخصيص</option>
+                                                <option>تخصيص</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">من</label>
+                                        <div class="col-sm-10">
+
+                                            <input input type="text" class="form-control datepicker" placeholder="">
+
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">الي</label>
+                                        <div class="col-sm-10">
+
+                                            <input input type="text" class="form-control datepicker" placeholder="">
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-4"><button class="btn btn-outline-info"> إنشاء التقرير</button></div>
+                            <div class="col-md-4"><button class="btn btn-outline-info"> تحميل إلى PDF</button></div>
+                            <div class="col-md-4"><button class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> تصدير</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">CSV</a>
+                                    <a class="dropdown-item " href="#">XLS</a>
+                                    <a class="dropdown-item" href="#">XLSX</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+               
+                </div>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">التاريخ</th>
+                                    <th scope="col">حساب المعاملات</th>
+                                    <th scope="col">تفاصيل</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">الدفع</th>
+                                    <th scope="col">الرصيد الختامي</th>
+                                  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                    
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+                </div>
+                
+                 <div class="tab-pane fade" id="pills-tab8" role="tabpanel" aria-labelledby="pills-tab8-tab">
+                     <section class="tab5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">التاريخ</th>
+                                    <th scope="col">مرجع</th>
+                                    <th scope="col">المبلغ</th>
+                                    <th scope="col">اسم العميل</th>
+                                    
+                                    <th scope="col">دائن</th>
+                                    <th scope="col">ملاحظة</th>
+                                    <th scope="col">اجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                               
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                  
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+                </div>
+               
+                  <div class="tab-pane fade" id="pills-tab9" role="tabpanel" aria-labelledby="pills-tab9-tab">
+                     <section class="tab9">
+                        <p>منتجات مباعة ل Customer1 (الضرائب غير مدرجة)
+</p>
+                    </section>
+
+                
+                </div>
+               
+            
+            
+            
+            </div>
+       
+        </section>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/add-client.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>

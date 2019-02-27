@@ -1,0 +1,64 @@
+*{
+    
+}
+.info{
+    margin-top: 5%;
+}
+label {
+    font-size: 12px !important;
+}
+.icons i{
+    padding: 2% 3%;
+}
+
+.icons i.tool,.company-name i{
+    font-size: 22px !important;
+   
+}
+.form-inputs form{
+    width:60%;
+    float: left;
+}
+form .full-width{
+    width:150%;
+    float: left;
+}
+.form-border{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.form-border .form-inputs{
+    padding: 7% 5%; 5% 5%;
+
+}
+.form-inputs .form-group{
+    margin-bottom: 6%;
+}
+.form-inputs label{
+    padding: 0;
+    margin: auto;
+}
+.form-inputs input , .form-inputs select{
+    height: 27px;
+    border-radius: 0;
+}
+.form-inputs select{
+    height: 33px;
+}
+form i{
+    font-size: 30px;
+    margin: auto;
+}
+table form{
+    width: 90%;
+}
+table td{
+/*    float:right !important;*/
+/*
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+*/
+   
+}
+.col-md-8 {
+/*    background-color: aqua;*/
+}

@@ -1,0 +1,28 @@
+.invoice-aging{
+    padding-top: 5%;
+    background-color: #fff;
+}
+h4{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    font-weight: 400;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+button{
+    margin: 0 2%;
+}
+table{
+    width: 95% !important;
+}
+table thead{
+    background-color:gray;
+    color: #fff;
+}
+table td{
+    padding: 3% !important;
+    
+}
+

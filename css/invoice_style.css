@@ -1,0 +1,334 @@
+body {
+    background-color: #fafafa;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right !important;
+    transition: all .5s ease-in-out;
+    /*  
+    letter-spacing: 0.5px
+*/
+}
+
+a {
+    text-decoration: none !important;
+}
+
+i {
+    margin-right: 0 !important;
+}
+
+.row {
+    margin: auto;
+    margin-bottom: 4%;
+}
+.content{
+   padding-top: 90px;
+
+}
+nav .dropdown-toggle::after{
+    display: none !important;
+    
+}
+nav .row,.row.title {
+    margin-bottom: 0;
+}
+
+nav {
+   padding: 10px 0px 5px 0px;
+    background-color: #fff;
+}
+
+nav a,
+nav a i {
+    color: #666;
+}
+
+.nav-link {
+    padding: 0 !important;
+}
+
+nav a {
+    padding: 5px 10px;
+}
+
+nav a span {
+    color: blue;
+}
+.dropdown-menu.show{
+    left:-40px !important;
+}
+nav .dropdown-menu.show{
+    top:-20px !important;
+}
+nav .my-company {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+    margin-right: 50px;
+}
+
+nav .username {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+}
+
+nav .username i {
+    padding-left: 10px;
+}
+
+nav .eshtrak {
+    padding: 0 15px;
+}
+
+nav .tools {
+    padding-top: 10px;
+}
+
+nav .tools .tools-start {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav .tools .tools-end {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.page-title p{
+   padding-top: 2%;
+
+}
+/*************/
+aside.side-menu {
+    width: 15%;
+    background-color: #fff;
+    height: 100vh;
+    overflow-y: scroll;
+    display: none;
+    /*
+    transition: all 4s ease-in-out;
+*/
+}
+
+.open-menu {
+    display: block !important;
+}
+
+.close-menu {
+    display: none;
+    width: 0px !important;
+    /*    transform: translateX(-100%) !important;*/
+    /*    transition: all 4s ease-in-out;*/
+}
+
+aside ul {
+    padding-right: 0px;
+}
+
+aside.side-menu li {
+    padding: 5% 2%;
+}
+
+aside.side-menu li:hover {
+    background-color: #40475b;
+}
+
+aside.side-menu li a {
+    color: #000;
+}
+
+.menu-item:hover .menu-icon,
+.menu-item:hover .nav-link {
+    color: #fff;
+}
+
+aside span i {
+    /*    padding: 0 4px;*/
+    font-size: 20px;
+    color: #000;
+}
+
+/*******/
+.invoices > .container {
+    margin-top: 7%;
+}
+
+.invoices .first .dropdown a {
+    color: #000;
+    font-weight: 500;
+}
+
+.invoices .col-md-6 .col-content {
+    background-color: #fff;
+}
+
+.invoices .nav-item a {
+    float: left;
+    margin-right: 10%;
+}
+
+.invoices span i {
+    margin-right: 10%;
+    color: dimgrey;
+}
+
+.invoices-list {
+    padding-top: 15%;
+    /*    float: right;*/
+}
+
+.invoices-list ul {
+    padding-right: 0 !important;
+}
+
+.invoices-list a {
+    font-size: 12px;
+}
+
+.invoices-part:hover {
+    background-color: #40485b;
+}
+
+.invoices-list a:hover {
+    text-decoration: underline !important;
+
+}
+
+.invoices-part:hover .invoice-link,
+.invoices-part:hover .invoice-icon,
+.invoices-part:hover p {
+    color: #fff;
+}
+
+/**********/
+.second p {
+    font-size: 13px;
+    /*    font-weight: 800;*/
+}
+.second h5, .first h5{
+    font-weight: 300;
+}
+.second p {
+    color: #40485b;
+}
+
+.second-cols:hover .second-parag {
+    color: #fff;
+}
+
+.second .col-md-8 i {
+    color: #40485b !important;
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+
+.second .col-content .col-4:hover {
+    background-color: #40485b;
+    color: #fff;
+}
+
+.second-part {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.invoices-part a{
+    color: #40485b !important;
+}
+.invoices-part:hover .invoice-link{
+    color: #fff !important;
+}
+.second-part .second-row {
+    margin-bottom: 0 !important;
+}
+
+.second-cols {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+.second-cols:hover .second-icons {
+    color: #fff !important;
+}
+/*modals*/
+h5.modal-title{
+    color: #fff !important;
+    font-weight: 500 ;
+}
+.modal-header{
+    background-color:cornflowerblue !important;
+}
+.second #Modal1 .modal-header h5{
+    color: #000;
+}
+.modal-header button{
+    margin-left:0 !important;
+    color: #fff !important;
+}
+.modal-footer i.icofont-close{
+    color: red !important;
+    padding: 0 2%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.dismissbtn:hover .icofont-close{
+   color: #fff !important; 
+}
+.modal-footer i.icofont-check{
+    color: #fff !important;
+    padding: 0 2%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.second .modal-body form{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
+.second .modal-body form input,.second .modal-body form select{
+    border-radius: 0;
+}
+.second .modal-body form label{
+    color: #000;
+    font-size: 14px;
+    padding: 0;
+    text-align: right;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+    top:220px !important;
+}
+/******/
+.third .row .col-md-6 {
+    margin-bottom: 4%;
+}
+
+.third .col-content {
+    padding-right: 5%;
+
+}
+
+.third .col-content h3 {
+    font-weight: 700;
+    color: blue;
+}
+
+.third .col-content i {
+    color: deeppink;
+}
+
+#piechart {
+    text-align: center;
+}
+
+/*****scroll*/
+body::-webkit-scrollbar {
+    width: 1em;
+    height: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    outline: 1px solid darkgray;
+}
+
+/****************/

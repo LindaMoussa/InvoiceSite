@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoice</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/invoice_style.css" />
+
+    <!-- datePicker Plugin   -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+
+</head>
+
+<body>
+
+    <aside class="side-menu float-right fixed-top pt-3">
+        <ul class="nav flex-column">
+            <li class="nav-item ">
+                <a class="nav-link active" href="#"><img src=""></a>
+            </li>
+
+            <li class="nav-item border menu-item">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>لوحة المراقبة</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>الموردين</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>العملاء</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link active" href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>العروض</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>الفواتير</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>الطلبات</a>
+            </li>
+            <li class="nav-item menu-item ">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>الدفعات</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>المخزن</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>المصروفات</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link active " href="#"><span><i class="fas fa-tachometer-alt px-2 menu-icon"></i></span>المصرف</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="far fa-user px-2 menu-icon"></i></span>نقطة بيع</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>التسويق</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>التقارير</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>المحاسبة</a>
+            </li>
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="#"><span><i class="fas fa-user-tie px-2 menu-icon"></i></span>الاعلانات</a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <div class="content">
+        <nav class="fixed-top border">
+            <div class="container-fluid">
+                <div class="row">
+
+
+                    <div class="col-md-2 side-nav-icon">
+                        <a href="#" class="float-right "><i class="fas fa-bars fa-lg fa-rotate-90"></i></a>
+
+                    </div>
+                    <div class="col-md-3 text-center tools">
+                        <!--                        <a href="#" class="tools-start"><i class="fas fa-cog fa-lg"></i></a>-->
+                        <div class="row">
+                            <div class="col-md-2">
+                                <span class="nav-item dropdown p-0">
+                                    <a class="nav-link dropdown-toggle p-0 " href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-plus fa-lg"></i>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </span>
+
+                            </div>
+                            <div class="col-md-2">
+                                <span class="nav-item dropdown p-0">
+                                    <a class="nav-link dropdown-toggle p-0 " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-eye fa-lg"></i>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </span>
+
+                            </div>
+                            
+                            <div class="col-md-2 ">
+                                <span class="nav-item dropdown p-0">
+                                    <a class="nav-link dropdown-toggle p-0 " href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog fa-lg"></i>
+
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!--
+                        <a href="#"> <i class="fas fa-eye fa-lg"></i></a>
+                        <a href="#" class="tools-end"> <i class="fas fa-plus fa-lg"></i></a>
+-->
+
+                    </div>
+
+                    <div class="col-md-7 icons ">
+
+                        <a href="#" class="username"><span class=" "><i class="fas fa-user-circle fa-2x "></i></span>User name </a>
+
+                        <a href="#" class="eshtrak"><span>اشتراك</span></a>
+
+                        <a href="#" class="my-company">My Company</a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> <i class="fas fa-question-circle fa-lg"></i></a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"> <i class="fas fa-desktop fa-lg"></i></a>
+
+                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="تسجيل الخروج"><i class="fas fa-power-off fa-lg"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="page-title">
+                            <p>لوحة المراقبة</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="float-left">
+                            <button class="btn btn-outline-info rounded-0">اشتراكي<span><i class="icofont-loop"></i></span></button>
+                            <button class="btn btn-outline-info rounded-0">الشراكة<span><i class="icofont-gift-box px-1"></i></span></button>
+
+                        </div>
+                    </div>
+                </div>
+
+        </nav>
+
+        <section class="invoices">
+            <div class="container-fluid mt-5">
+                <div class="row">
+
+                    <div class="col-md-6 first">
+                        <div class="col-content border">
+                            <div class="row border-bottom">
+
+                                <div class="col-md-7 ">
+                                    <h5><i class="icofont-chart-bar-graph pl-2"></i>الإجمالي للفواتير مقابل الإجمالي للدفع</h5>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <a href="#" class="px-2"><span><i class="fas fa-sync-alt"></i></span></a>
+                                            <a href="#" class="px-2"><span><i class="fas fa-sync-alt"></i></span></a>
+
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="nav-item dropdown p-0">
+                                                <a class="nav-link dropdown-toggle p-0 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    هذا العام
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 mb-3">
+                                <img src="images/totalInvoices.png">
+                            </div>
+                            <div class="col-md-12 text-left mb-2">
+                                <span class="mx-3"><i class="fas fa-square text-primary p-2"></i>دفعت</span>
+                                <span class="mx-3"><i class="fas fa-square text-primary p-2"></i>تم تحريرالفواتير</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 second">
+                        <div class="col-content">
+                            <div class="row title border border-bottom">
+                                <h5 class="pr-2"><i class="icofont-rocket-alt-2"></i> إجراءات عاجلة</h5>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-8 second-part text-center ">
+                                    <div class="row second-row">
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="add-client.html">
+                                                    <i class="icofont-user-alt-3 second-icons"></i>
+                                                    <p class="second-parag">اضافة عميل</p>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#Modal1">
+                                                    <i class="icofont-calculator second-icons"></i>
+                                                    <p class="second-parag">إنشاء عرض</p>
+
+                                                </a>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">إنشاء عرض</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+
+                                                            <div class="modal-body">
+                                                                <form>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">العميل:</label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">تاريخ العرض:</label>
+                                                                        <div class="col-sm-9">
+
+                                                                            <input input type="text" id="datepicker" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">مجموعة العروض:</label>
+                                                                        <div class="col-sm-9">
+                                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </form>
+
+                                                            </div>
+                                                            <div class="modal-footer border-top-0">
+                                                                <button type="button" class="btn btn-outline-danger dismissbtn mx-2" data-dismiss="modal">الغاء<i class="icofont-close"></i></button>
+
+                                                                <a href="CreateOffer/createOffer-submission.html"><button type="button" class="btn btn-primary">تسجيل<i class="icofont-check"></i></button></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#Modal2">
+                                                    <i class="icofont-papers second-icons"></i>
+                                                    <p class="second-parag">إنشاء فاتورة بيع</p>
+
+                                                    <!--Modal-->
+                                                    <div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="ModalLabel2">إنشاء فاتورة بيع</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">العميل:</label>
+                                                                            <div class="col-sm-9">
+                                                                                <input type="text" class="form-control" id="" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">تاريخ العرض:</label>
+                                                                            <div class="col-sm-9">
+
+                                                                                <input input type="text" id="datepicker" class="form-control" id="" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">ترقيم المجموعة: </label>
+                                                                            <div class="col-sm-9">
+                                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                                    <option>1</option>
+                                                                                    <option>2</option>
+                                                                                    <option>3</option>
+                                                                                    <option>4</option>
+                                                                                    <option>5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+
+                                                                </div>
+                                                                <div class="modal-footer border-top-0">
+                                                                    <button type="button" class="btn btn-outline-danger dismissbtn mx-2" data-dismiss="modal">الغاء<i class="icofont-close"></i></button>
+
+                                                                    <a href="#"> <button type="button" class="btn btn-primary">تسجيل<i class="icofont-check"></i></button></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="add-supplier.html">
+                                                    <i class="icofont-user-suited second-icons"></i>
+                                                    <p class="second-parag">اضافة مورد</p>
+
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="javascript:void(0)" data-toggle="modal" data-target="#Modal3">
+                                                    <i class="icofont-paper second-icons"></i>
+                                                    <p class="second-parag">إنشاء فاتورة شراء</p>
+
+                                                    <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ModalLabel3" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="ModalLabel3">إنشاء فاتورة شراء </h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">المورد: </label>
+                                                                            <div class="col-sm-9">
+                                                                                <input type="text" class="form-control" id="" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">تاريخ الفاتورة: </label>
+                                                                            <div class="col-sm-9">
+
+                                                                                <input input type="text" id="datepicker" class="form-control" id="" placeholder="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">رقم الفاتورة: </label>
+                                                                            <div class="col-sm-9">
+                                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                                    <option>1</option>
+                                                                                    <option>2</option>
+                                                                                    <option>3</option>
+                                                                                    <option>4</option>
+                                                                                    <option>5</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+
+                                                                </div>
+                                                                <div class="modal-footer border-top-0">
+                                                                    <button type="button" class="btn btn-outline-danger dismissbtn mx-2" data-dismiss="modal">الغاء<i class="icofont-close"></i></button>
+
+                                                                    <a href="#"><button type="button" class="btn btn-primary">تسجيل<i class="icofont-check"></i></button></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="item-lookup.html">
+                                                    <i class="icofont-box second-icons"></i>
+                                                    <p class="second-parag">ادخال منتج</p>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="payments.html">
+                                                    <i class="icofont-credit-card second-icons"></i>
+                                                    <p class="second-parag">دفعات البيع</p>
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="expenses.html">
+                                                    <i class="icofont-dollar second-icons"></i>
+                                                    <p class="second-parag">ادخل المصروف</p>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-4 second-cols">
+                                            <div>
+                                                <a href="purchase-payments.html">
+                                                    <i class="icofont-cart-alt second-icons"></i>
+                                                    <p class="second-parag">دفعات الشراء</p>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-4 border invoices-part">
+                                    <div class="invoices-list ">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="reports_invoice-aging.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> تقادم فواتير العملاء </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_bill-aging.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> تقادم فواتير الشراء </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_payment-history.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> ﻻئحة الدفعات </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_purchase-payment-history.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> سجل دفعات الشراء </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_customer-balance.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> الرصيد المتبقي للعملاء </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_supplier-balance.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> رصيد الموردين </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_sales-by-client.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> المبيعات حسب الزبون </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_sales-by-salesman.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> مبيعات كل مندوب </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_items-by-price.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> قائمة اسعار المنتجات </a>
+                                            </li>
+                                            <li>
+                                                <a href="reports_expense-history.html" class="invoice-link"><span> <i class="far fa-newspaper invoice-icon"></i></span> لائحة المصروفات </a>
+                                            </li>
+
+                                        </ul>
+                                        <p class="text-center">التقارير</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 third">
+                        <div class="row">
+                            <div class="col-md-6 ">
+                                <div class="border col-content">
+                                    <h3>0 SAR</h3>
+                                    <h6>الأرباح</h6>
+                                    <p><span><i class="fa fa-arrow-alt-circle-down"></i></span>-100%</p>
+                                    <p>الشهر الماضي 0 SAR</p>
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border col-content">
+                                    <h3>0 SAR</h3>
+                                    <h6>الأرباح</h6>
+                                    <p><span><i class="fa fa-arrow-alt-circle-down"></i></span>-100%</p>
+                                    <p>الشهر الماضي 0 SAR</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="border col-content">
+                                    <h3>0 SAR</h3>
+                                    <h6>الأرباح</h6>
+                                    <p><span><i class="fa fa-arrow-alt-circle-down"></i></span>-100%</p>
+                                    <p>الشهر الماضي 0 SAR</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="border col-content">
+                                    <h3>0 SAR</h3>
+                                    <h6>الأرباح</h6>
+                                    <p><span><i class="fa fa-arrow-alt-circle-down"></i></span>-100%</p>
+                                    <p>الشهر الماضي 0 SAR</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="col-content">
+                            <div class="row title border border-bottom">
+                                <h5 class="pr-2"> أعلى المصاريف حسب التصنيف</h5>
+
+                            </div>
+
+                            <div class="row border border-top-0">
+                                <div dir="rtl" class="text-center" id="piechart"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/invoice.js"></script>
+    <script src="js/common.js"></script>
+  
+
+
+
+
+</body>
+
+</html>
