@@ -123,22 +123,16 @@ aside ul {
 }
 
 aside.side-menu li {
-    padding: 5% 2%;
+    padding: 0 2% 7px;
 }
 
 aside.side-menu li:hover {
-    background-color: #40475b;
+/*    background-color: #40475b;*/
 }
 
 aside.side-menu li a {
     color: #000;
 }
-
-.menu-item:hover .menu-icon,
-.menu-item:hover .nav-link {
-    color: #fff;
-}
-
 aside span i {
     /*    padding: 0 4px;*/
     font-size: 20px;
